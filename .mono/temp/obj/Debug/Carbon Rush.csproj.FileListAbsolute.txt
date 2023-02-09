@@ -1,0 +1,9 @@
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\bin\Debug\Carbon Rush.dll
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\bin\Debug\Carbon Rush.pdb
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.csproj.AssemblyReference.cache
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.AssemblyInfoInputs.cache
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.AssemblyInfo.cs
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.csproj.CoreCompileInputs.cache
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.dll
+C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.pdb
