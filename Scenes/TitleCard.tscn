@@ -2,7 +2,7 @@
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 
-[node name="Main" type="Node2D"]
+[node name="TitleCard" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 537, 304 )
