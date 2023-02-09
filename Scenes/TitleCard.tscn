@@ -24,3 +24,5 @@ margin_top = 302.0
 margin_right = 552.0
 margin_bottom = 383.0
 text = "Play"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
