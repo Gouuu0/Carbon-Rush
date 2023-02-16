@@ -63,6 +63,9 @@ namespace Com.IsartDigital.Manager {
         public const string WIN = "WIN";
         public const string FACT = "FACT";
         public const string KNOW = "KNOW";
+
+        //Entities related
+        public const string ENTITIES_HITBOX_PATH = "HitBox";
     }
     //where is the cake?
 }

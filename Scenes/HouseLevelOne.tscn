@@ -1,0 +1,57 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Script/Manager/LevelManager.cs" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Script/Entities/Player/Player.cs" type="Script" id=3]
+[ext_resource path="res://Assets/Sprites/Autotile Test 2.png" type="Texture" id=4]
+[ext_resource path="res://Script/Wall.cs" type="Script" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 28.5, 28.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 88.835, 34 )
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+OBJECT_CONTAINER_PATH = NodePath("ObjectContainer")
+PLAYER_CONTAINER_PATH = NodePath("PlayerContainer")
+ENEMIES_CONTAINER_PATH = NodePath("EnemyContainer")
+WALLS_CONTAINER_PATH = NodePath("WallsContainer")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+rotating = true
+current = true
+
+[node name="ObjectContainer" type="Node2D" parent="."]
+
+[node name="PlayerContainer" type="Node2D" parent="."]
+
+[node name="Player" type="Sprite" parent="PlayerContainer"]
+position = Vector2( 327, 425 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+BASE_SPEED = 1.0
+
+[node name="HitBox" type="Area2D" parent="PlayerContainer/Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerContainer/Player/HitBox"]
+position = Vector2( 0.5, -0.5 )
+shape = SubResource( 1 )
+
+[node name="EnemyContainer" type="Node2D" parent="."]
+
+[node name="WallsContainer" type="Node2D" parent="."]
+
+[node name="Wall" type="Sprite" parent="WallsContainer"]
+position = Vector2( 408, 547 )
+scale = Vector2( 4.12, 1 )
+texture = ExtResource( 4 )
+script = ExtResource( 5 )
+
+[node name="HitBox" type="Area2D" parent="WallsContainer/Wall"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WallsContainer/Wall/HitBox"]
+position = Vector2( 0.485435, -6 )
+shape = SubResource( 2 )

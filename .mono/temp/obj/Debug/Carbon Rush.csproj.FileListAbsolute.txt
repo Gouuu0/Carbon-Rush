@@ -7,3 +7,12 @@ C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug
 C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.csproj.CoreCompileInputs.cache
 C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.dll
 C:\Users\kelya\Documents\Isart 2022-2023\Projet\Carbon-Rush\.mono\temp\obj\Debug\Carbon Rush.pdb
+D:\Mes jeux\Carbon Rush\.mono\temp\bin\Debug\Carbon Rush.dll
+D:\Mes jeux\Carbon Rush\.mono\temp\bin\Debug\Carbon Rush.pdb
+D:\Mes jeux\Carbon Rush\.mono\temp\obj\Debug\Carbon Rush.csproj.AssemblyReference.cache
+D:\Mes jeux\Carbon Rush\.mono\temp\obj\Debug\Carbon Rush.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mes jeux\Carbon Rush\.mono\temp\obj\Debug\Carbon Rush.AssemblyInfoInputs.cache
+D:\Mes jeux\Carbon Rush\.mono\temp\obj\Debug\Carbon Rush.AssemblyInfo.cs
+D:\Mes jeux\Carbon Rush\.mono\temp\obj\Debug\Carbon Rush.csproj.CoreCompileInputs.cache
+D:\Mes jeux\Carbon Rush\.mono\temp\obj\Debug\Carbon Rush.dll
+D:\Mes jeux\Carbon Rush\.mono\temp\obj\Debug\Carbon Rush.pdb
