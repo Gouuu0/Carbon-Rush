@@ -2,34 +2,34 @@ using Godot;
 using System;
 using System.Collections.Generic;
 
-namespace Com.IsartDigital.Manager
+//Author : Merfoud Kélyan
+
+namespace Com.IsartDigital.Game
 {
 
 	public class LgManager : Node2D
 	{
-		static public int lenghtChecker;
-
-		[Export] private NodePath buttonContainerPath;
-		private Node2D buttonContainer;
-
+		static public int lengthChecker;
 
 		private static Dictionary<Control, List<string>> translate = new Dictionary<Control, List<string>>() { };
 		public static List<Control> translationList = new List<Control>() { };
 		private List<Button> buttonList = new List<Button>() { };
 
 		private int language = 0; //use as the list index (choose the language)
-
+		private Color startColor;
 		public override void _Ready()
 		{
-			buttonContainer = (Node2D)GetNode(buttonContainerPath);
-			foreach (Button item in buttonContainer.GetChildren())
+			foreach (Button item in GetChildren())
 			{
 				buttonList.Add(item);
 				item.Connect(StrManager.PRESSED, this, nameof(Translation), new Godot.Collections.Array() { (item) });
 			}
+			startColor = buttonList[0].Modulate;
+
+			SetGrey(buttonList[0]); //our default language is the only one in the basic color (at the beggining)
 		}
 
-		public static void translateAdd(Control pControl, List<string> pList) //to simplify our task dear teammates
+		public static void TranslateAdd(Control pControl, List<string> pList) //to simplify our task dear teammates
 		{
 			switch (pControl)
 			{
@@ -46,11 +46,11 @@ namespace Com.IsartDigital.Manager
 				default:
 					break;
 			}
-			if (lenghtChecker != 0 && pList.Count - 1 != lenghtChecker)
+			if (lengthChecker != 0 && pList.Count - 1 != lengthChecker)
 			{
-				GD.Print("Problem of lenght detected from the list " + pList + " the number of index difference is ", lenghtChecker - pList.Count - 1);//call this when a list too many or not enough index
+				GD.Print("Problem of length detected from the list " + pList + " the number of index difference is ", lengthChecker - pList.Count - 1);//call this when a list too many or not enough index
 			}
-			else lenghtChecker = pList.Count - 1;
+			else lengthChecker = pList.Count - 1;
 		}
 
 		private void Translation(Button pButton)
@@ -72,6 +72,12 @@ namespace Com.IsartDigital.Manager
 						break;
 				}
 			}
+			SetGrey(pButton);
+		}
+		private void SetGrey(Button pButton)
+		{
+			foreach (Button item in buttonList) item.Modulate = Colors.DarkSlateGray;
+			pButton.Modulate = startColor;
 		}
 	}
 }

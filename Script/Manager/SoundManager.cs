@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 //Author : Merfoud Kélyan
 
-namespace Com.IsartDigital.Test
+namespace Com.IsartDigital.Game
 {
 
     public class SoundManager : Node2D
@@ -144,6 +144,22 @@ namespace Com.IsartDigital.Test
                 musicPlayerList.Add(sfxPlayerList[sfxPlayerList.Count - 1]);
                 sfxPlayerList.RemoveAt(sfxPlayerList.Count - 1);
             }
+        }
+
+        public void ClearMusicPlayers()
+        {
+            foreach (AudioStreamPlayer item in musicPlayerList) item.Stop();
+        }
+
+        public void ClearSFXPlayers()
+        {
+            foreach (AudioStreamPlayer item in sfxPlayerList) item.Stop();
+        }
+
+        public void ClearAllPlayers()
+        {
+            ClearMusicPlayers();
+            ClearSFXPlayers();
         }
     }
 }
