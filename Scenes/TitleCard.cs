@@ -12,8 +12,6 @@ namespace Com.IsartDigital.Manager {
         [Export] private NodePath buttonContainerPath;
         Node2D buttonContainer;
 
-        List<Button> buttonList = new List<Button>();
-
         public override void _Ready()
         {
             buttonContainer = (Node2D)GetNode(buttonContainerPath);
@@ -27,8 +25,7 @@ namespace Com.IsartDigital.Manager {
 
             foreach (Button item in buttonContainer.GetChildren())
             {
-                buttonList.Add(item);
-                item.Connect(StrManager.PRESSED, this, nameof(ButtonPressed));
+                item.Connect(StrManager.PRESSED, this, nameof(ButtonPressed), new Godot.Collections.Array() { (item) });
             }
         }
         static public TitleCard GetInstance()
@@ -36,13 +33,23 @@ namespace Com.IsartDigital.Manager {
             if (instance == null) instance = new TitleCard();
             return instance;
         }
+
         private void ButtonPressed(Button pButton)
         {
             switch (pButton.Name)
             {
+                case StrManager.PARAMETERS:
+                    break;
+                case StrManager.PLAY:
+                    break;
+                case StrManager.QUIT:
+                    break;
+                case StrManager.CREDIT:
+                    break;
                 default:
                     break;
             }
+            SoundManager.GetInstance().PlaySFX(StrManager.MENU_CLICK);
         }
     }
 

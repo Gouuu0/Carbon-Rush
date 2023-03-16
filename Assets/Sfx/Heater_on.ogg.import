@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Heater_on.ogg-3f3861a3320a273a86f48eba69295d5b.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sfx/Heater_on.ogg"
+dest_files=[ "res://.import/Heater_on.ogg-3f3861a3320a273a86f48eba69295d5b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

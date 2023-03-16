@@ -1,9 +1,57 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Script/Manager/SoundManager.cs" type="Script" id=1]
+[ext_resource path="res://Assets/Sfx/light_off.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Assets/Sfx/light_on.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Assets/Sfx/Heater_off.ogg" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Sfx/faucet_open.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assets/Sfx/Heater_on.ogg" type="AudioStream" id=6]
+[ext_resource path="res://Assets/Sfx/fridge_close.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sfx/faucet_close.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Assets/Sfx/Menu_Click.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Assets/Sfx/O2_Almost_Full.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Assets/Sfx/fridge_open.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Sfx/TV_off.ogg" type="AudioStream" id=12]
+[ext_resource path="res://Assets/Sfx/Car_keys.ogg" type="AudioStream" id=13]
+[ext_resource path="res://Assets/Sfx/Family_footstep_2.ogg" type="AudioStream" id=14]
+[ext_resource path="res://Assets/Sfx/window_close.ogg" type="AudioStream" id=15]
+[ext_resource path="res://Assets/Sfx/door_close.ogg" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Sfx/door_open.ogg" type="AudioStream" id=17]
+[ext_resource path="res://Assets/Sfx/Family_footstep_1.ogg" type="AudioStream" id=18]
+[ext_resource path="res://Assets/Sfx/window_open.ogg" type="AudioStream" id=19]
+[ext_resource path="res://Assets/Sfx/TV static.ogg" type="AudioStream" id=20]
+[ext_resource path="res://Assets/Sfx/Player_Spotted.ogg" type="AudioStream" id=21]
+[ext_resource path="res://Assets/Music/Music.ogg" type="AudioStream" id=22]
+[ext_resource path="res://Assets/Music/Ambiance.ogg" type="AudioStream" id=23]
 
 [node name="SoundManager" type="Node2D"]
 script = ExtResource( 1 )
+sfxDictionary = {
+"CAR_KEYS": ExtResource( 13 ),
+"DOOR_CLOSE": ExtResource( 16 ),
+"DOOR_OPEN": ExtResource( 17 ),
+"FAMILY_FOOTSTEP_A": ExtResource( 18 ),
+"FAMILY_FOOTSTEP_B": ExtResource( 14 ),
+"FAUCET_CLOSE": ExtResource( 8 ),
+"FAUCET_OPEN": ExtResource( 5 ),
+"FRIDGE_CLOSE": ExtResource( 7 ),
+"FRIDGE_OPEN": ExtResource( 11 ),
+"HEATER_OFF": ExtResource( 4 ),
+"HEATER_ON": ExtResource( 6 ),
+"LIGHT_OFF": ExtResource( 2 ),
+"LIGHT_ON": ExtResource( 3 ),
+"MENU_CLICK": ExtResource( 9 ),
+"O2_ALMOST_FULL": ExtResource( 10 ),
+"PLAYER_SPOTTED": ExtResource( 21 ),
+"TV_OFF": ExtResource( 12 ),
+"TV_STATIC": ExtResource( 20 ),
+"WINDOW_CLOSE": ExtResource( 15 ),
+"WINDOW_OPEN": ExtResource( 19 )
+}
+musicDictionary = {
+"AMBIANCE": ExtResource( 23 ),
+"MUSIC": ExtResource( 22 )
+}
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/O2_Almost_Full.ogg-7161517a44cca85a5e4f4a226f5d6c7f.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sfx/O2_Almost_Full.ogg"
+dest_files=[ "res://.import/O2_Almost_Full.ogg-7161517a44cca85a5e4f4a226f5d6c7f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
