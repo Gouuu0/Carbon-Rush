@@ -39,13 +39,13 @@ namespace Com.IsartDigital.Manager {
             switch (pButton.Name)
             {
                 case StrManager.PARAMETERS:
-                    return;
+                    break;
                 case StrManager.PLAY:
                     break;
                 case StrManager.QUIT:
-                    return;
+                    break;
                 case StrManager.CREDIT:
-                    return;
+                    break;
                 default:
                     break;
             }
