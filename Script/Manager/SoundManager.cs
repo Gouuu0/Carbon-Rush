@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+using Com.IsartDigital.Manager;
 
 //Author : Merfoud Kélyan
 
@@ -11,13 +12,13 @@ namespace Com.IsartDigital.Manager
     {
         [Export] private int musicPlayerNumber = 2;
 
-        [Export]
-        public Dictionary<string, AudioStreamOGGVorbis> sfxDictionary = new Dictionary<string, AudioStreamOGGVorbis>()
-        { {StrManager.TEST, default} };
+        //[Export]
+        //public Dictionary<string, AudioStreamOGGVorbis> sfxDictionary = new Dictionary<string, AudioStreamOGGVorbis>()
+        //{ {StrManager.TEST, default} };
 
-        [Export]
-        public Dictionary<string, AudioStreamOGGVorbis> musicDictionary = new Dictionary<string, AudioStreamOGGVorbis>()
-        { {StrManager.TEST, default} };
+        //[Export]
+        //public Dictionary<string, AudioStreamOGGVorbis> musicDictionary = new Dictionary<string, AudioStreamOGGVorbis>()
+        //{ {StrManager.TEST, default} };
 
         private List<AudioStreamPlayer> sfxPlayerList = new List<AudioStreamPlayer>();
         private List<AudioStreamPlayer> musicPlayerList = new List<AudioStreamPlayer>();
