@@ -9,12 +9,34 @@ namespace Com.IsartDigital.Manager {
 	public class TitleCard : Node2D
 	{
         static private TitleCard instance;
-        [Export] private NodePath buttonContainerPath;
-        Node2D buttonContainer;
+
+        [Export] private NodePath playPath;
+        Button play;
+        [Export] private NodePath quitPath;
+        Button quit;
+        [Export] private NodePath parameterPath;
+        Button parameter;
+        [Export] private NodePath creditPath;
+        Button credit;
+
+        [Export] PackedScene parameterScene;
 
         public override void _Ready()
         {
-            buttonContainer = (Node2D)GetNode(buttonContainerPath);
+            play = (Button)GetNode(playPath);
+            quit = (Button)GetNode(quitPath);
+            parameter = (Button)GetNode(parameterPath);
+            credit = (Button)GetNode(creditPath);
+
+            LgManager.TranslateAdd(play, StrManager.playList);
+            LgManager.TranslateAdd(quit, StrManager.quitList);
+            LgManager.TranslateAdd(credit, StrManager.creditList);
+            LgManager.TranslateAdd(parameter, StrManager.parameterList);
+
+            play.Connect(StrManager.PRESSED, this, nameof(Play));
+            quit.Connect(StrManager.PRESSED, this, nameof(Quit));
+            parameter.Connect(StrManager.PRESSED, this, nameof(Parameter));
+            credit.Connect(StrManager.PRESSED, this, nameof(Credit));
 
             instance = null;
             if (instance != null)
@@ -23,10 +45,7 @@ namespace Com.IsartDigital.Manager {
             }
             instance = this;
 
-            foreach (Button item in buttonContainer.GetChildren())
-            {
-                item.Connect(StrManager.PRESSED, this, nameof(ButtonPressed), new Godot.Collections.Array() { (item) });
-            }
+            SoundManager.GetInstance().PlayMusic(StrManager.MUSIC);
         }
         static public TitleCard GetInstance()
         {
@@ -34,22 +53,24 @@ namespace Com.IsartDigital.Manager {
             return instance;
         }
 
-        private void ButtonPressed(Button pButton)
+        private void Play()
         {
-            switch (pButton.Name)
-            {
-                case StrManager.PARAMETERS:
-                    break;
-                case StrManager.PLAY:
-                    break;
-                case StrManager.QUIT:
-                    break;
-                case StrManager.CREDIT:
-                    break;
-                default:
-                    break;
-            }
             SoundManager.GetInstance().PlaySFX(StrManager.MENU_CLICK);
+        }
+        private void Quit()
+        {
+            SoundManager.GetInstance().PlaySFX(StrManager.MENU_CLICK);
+            GetTree().Quit();
+        }
+        private void Credit()
+        {
+            SoundManager.GetInstance().PlaySFX(StrManager.MENU_CLICK);
+        }
+        private void Parameter()
+        {
+            SoundManager.GetInstance().PlaySFX(StrManager.MENU_CLICK);
+            Node2D lPar = parameterScene.Instance() as Node2D;
+            AddChild(lPar);
         }
     }
 

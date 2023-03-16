@@ -44,8 +44,8 @@ namespace Com.IsartDigital.Manager
         private List<AudioStreamPlayer> musicPlayerList = new List<AudioStreamPlayer>();
         static private SoundManager instance;
 
-        private bool isMusicOn;
-        private bool isSfxOn;
+        private bool isMusicOn = true;
+        private bool isSfxOn = true;
 
         private float startVolumeSfx;
         private float startVolumeMusic;
@@ -99,8 +99,8 @@ namespace Com.IsartDigital.Manager
             {
                 if (!item.Playing)
                 {
-                    item.Stream = sfxDictionary[pString];
-                    sfxDictionary[pString].Loop = true;
+                    item.Stream = musicDictionary[pString];
+                    musicDictionary[pString].Loop = true;
                     item.Play();
                 }
             }
@@ -111,7 +111,6 @@ namespace Com.IsartDigital.Manager
             foreach (AudioStreamPlayer item in musicPlayerList)
             {
                 item.VolumeDb = MUTE;
-                item.Stop();
             }
             isMusicOn = false;
         }

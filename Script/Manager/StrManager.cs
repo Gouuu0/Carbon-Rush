@@ -1,12 +1,13 @@
 using Godot;
 using System;
+using System.Collections.Generic;
 
 //Author : Merfoud Kélyan
 
 namespace Com.IsartDigital.Manager
 {
 
-    public readonly struct StrManager
+    public class StrManager
     {
         //Direction
         public const string RIGHT = "Right";
@@ -134,7 +135,10 @@ namespace Com.IsartDigital.Manager
         public const string KNOW = "KNOW";
 
         //List of translation
-
+        static public List<string> playList = new List<string>() {"Play","Jouer"};
+        static public List<string> parameterList = new List<string>() {"Parameters", "Paramètres" };
+        static public List<string> creditList = new List<string>() {"Credit","Crédit"};
+        static public List<string> quitList = new List<string>() {"Quit","Quitter"};
 
         //Music Keys for the dictionary
         public const string AMBIANCE = "AMBIANCE";
