@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.Collections.Generic;
+using Com.IsartDigital.Manager;
 
 //Author : Merfoud Kélyan
 
@@ -13,11 +14,31 @@ namespace Com.IsartDigital.Manager
 
         [Export]
         public Dictionary<string, AudioStreamOGGVorbis> sfxDictionary = new Dictionary<string, AudioStreamOGGVorbis>()
-        { {StrManager.TEST, default} };
+        { {StrManager.CAR_KEYS, default},
+        {StrManager.DOOR_CLOSE, default},
+        {StrManager.DOOR_OPEN, default},
+        {StrManager.FAMILY_FOOTSTEP_A, default},
+        {StrManager.FAMILY_FOOTSTEP_B, default},
+        {StrManager.FAUCET_OPEN, default},
+        {StrManager.FAUCET_CLOSE, default},
+        {StrManager.FRIDGE_OPEN, default},
+        {StrManager.FRIDGE_CLOSE, default},
+        {StrManager.HEATER_OFF, default},
+        {StrManager.HEATER_ON, default},
+        {StrManager.LIGHT_OFF, default},
+        {StrManager.LIGHT_ON, default},
+        {StrManager.MENU_CLICK, default},
+        {StrManager.O2_ALMOST_FULL, default},
+        {StrManager.PLAYER_SPOTTED, default},
+        {StrManager.TV_STATIC, default},
+        {StrManager.TV_OFF, default},
+        {StrManager.WINDOW_CLOSE, default},
+        {StrManager.WINDOW_OPEN, default}};
 
         [Export]
         public Dictionary<string, AudioStreamOGGVorbis> musicDictionary = new Dictionary<string, AudioStreamOGGVorbis>()
-        { {StrManager.TEST, default} };
+        { {StrManager.AMBIANCE, default},
+        {StrManager.MUSIC, default} };
 
         private List<AudioStreamPlayer> sfxPlayerList = new List<AudioStreamPlayer>();
         private List<AudioStreamPlayer> musicPlayerList = new List<AudioStreamPlayer>();

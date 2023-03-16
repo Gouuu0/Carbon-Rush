@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/light_off.ogg-98a2ba264efb760fa366869e35e69e77.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sfx/light_off.ogg"
+dest_files=[ "res://.import/light_off.ogg-98a2ba264efb760fa366869e35e69e77.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

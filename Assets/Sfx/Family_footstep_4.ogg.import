@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Family_footstep_4.ogg-c15ded5cc7d8488cf06c01d84de5686b.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sfx/Family_footstep_4.ogg"
+dest_files=[ "res://.import/Family_footstep_4.ogg-c15ded5cc7d8488cf06c01d84de5686b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

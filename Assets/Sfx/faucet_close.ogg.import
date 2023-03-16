@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/faucet_close.ogg-e55070f2ee5de65a7a51c7768984dcb0.oggstr"
+
+[deps]
+
+source_file="res://Assets/Sfx/faucet_close.ogg"
+dest_files=[ "res://.import/faucet_close.ogg-e55070f2ee5de65a7a51c7768984dcb0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
