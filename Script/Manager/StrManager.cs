@@ -3,16 +3,16 @@ using System;
 
 //Author : Merfoud Kélyan
 
-namespace Com.IsartDigital.Game
+namespace Com.IsartDigital.Manager
 {
 
     public readonly struct StrManager
     {
         //Direction
-        public const string MOVE_RIGHT = "Right";
-        public const string MOVE_LEFT = "Left";
-        public const string MOVE_UP = "Up";
-        public const string MOVE_DOWN = "Down";
+        public const string RIGHT = "Right";
+        public const string LEFT = "Left";
+        public const string UP = "Up";
+        public const string DOWN = "Down";
 
         //Other input
         public const string SPECIAL = "Special";
@@ -100,6 +100,7 @@ namespace Com.IsartDigital.Game
         public const string SIZE_CHANGED = "size_changed";
 
         public const string PLAYER = "Player";
+        public const string ENTITIES_HITBOX_PATH = "HitBox";
 
         //CallDeffered String
         public const string ADDCHILD = "add_child";

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 //Author : Merfoud Kélyan
 
-namespace Com.IsartDigital.Game
+namespace Com.IsartDigital.Manager
 {
 
     public class SoundManager : Node2D
