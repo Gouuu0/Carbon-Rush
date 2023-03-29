@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kelya\\Documents\\Isart 2022-2023\\Projet\\Carbon-Rush\\Carbon Rush.csproj": {}
+    "D:\\Mes jeux\\Carbon Rush\\Carbon Rush.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kelya\\Documents\\Isart 2022-2023\\Projet\\Carbon-Rush\\Carbon Rush.csproj": {
+    "D:\\Mes jeux\\Carbon Rush\\Carbon Rush.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kelya\\Documents\\Isart 2022-2023\\Projet\\Carbon-Rush\\Carbon Rush.csproj",
+        "projectUniqueName": "D:\\Mes jeux\\Carbon Rush\\Carbon Rush.csproj",
         "projectName": "Carbon Rush",
-        "projectPath": "C:\\Users\\kelya\\Documents\\Isart 2022-2023\\Projet\\Carbon-Rush\\Carbon Rush.csproj",
-        "packagesPath": "C:\\Users\\kelya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kelya\\Documents\\Isart 2022-2023\\Projet\\Carbon-Rush\\.mono\\temp\\obj\\",
+        "projectPath": "D:\\Mes jeux\\Carbon Rush\\Carbon Rush.csproj",
+        "packagesPath": "C:\\Users\\peete\\.nuget\\packages\\",
+        "outputPath": "D:\\Mes jeux\\Carbon Rush\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\kelya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\peete\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

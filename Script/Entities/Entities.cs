@@ -2,7 +2,7 @@ using Godot;
 using System;
 using Com.IsartDigital.Manager;
 
-public class Entities : Node2D
+public class Entities : KinematicBody2D
 {
     [Export] public int TEAM = 0;
     [Export] protected float BASE_SPEED = 2.5f;
