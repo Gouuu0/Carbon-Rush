@@ -15,6 +15,8 @@ public class Player : Entities
     
     private bool dashReady = true;
 
+    AnimatedSprite player;
+
     public override void _Ready()
     {
         DashTimer = GetNode<Timer>(DashTimerPath);
