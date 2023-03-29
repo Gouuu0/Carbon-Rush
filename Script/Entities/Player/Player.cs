@@ -39,6 +39,7 @@ public class Player : Entities
             CollisionMask -= 1;
         }
         base._Process(delta);
+        player = GetChild(0) as AnimatedSprite;
     }
 
     void Dash()

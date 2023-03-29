@@ -56,6 +56,7 @@ namespace Com.IsartDigital.Manager {
         private void Play()
         {
             SoundManager.GetInstance().PlaySFX(StrManager.MENU_CLICK);
+            GetTree().ChangeScene("res://Scenes/Test");
         }
         private void Quit()
         {
