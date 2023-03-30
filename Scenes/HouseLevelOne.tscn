@@ -17,7 +17,6 @@ WALLS_CONTAINER_PATH = NodePath("WallsContainer")
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 rotating = true
-current = true
 
 [node name="ObjectContainer" type="Node2D" parent="."]
 

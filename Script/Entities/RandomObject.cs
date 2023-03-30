@@ -27,7 +27,7 @@ namespace Com.IsartDigital.Entities
             if (pArea.Name.Contains((StrManager.ENTITIES_HITBOX_PATH))) { isConnect = true; Scale = new Vector2(1.2f, 1.2f); }
             
         }
-        protected void OnAreaExited()
+        protected void OnAreaExited(Area2D pArea)
         {
             isConnect = false; Scale = new Vector2(1f, 1f);
         }
