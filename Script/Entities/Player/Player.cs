@@ -4,10 +4,10 @@ using Com.IsartDigital.Manager;
 
 namespace Com.IsartDigital.Entities
 {
-    public class Player : Entities
-    {
-        [Export] NodePath DashTimerPath;
-        Timer DashTimer;
+    public static Vector2 pos;
+
+    [Export] NodePath DashTimerPath;
+    Timer DashTimer;
 
         [Export] NodePath DashTimerPath2;
         Timer DashTimer2;
@@ -15,7 +15,20 @@ namespace Com.IsartDigital.Entities
         [Export] float SLIP_FORCE = 1.2f;
         private bool onGround = false;
 
-        private bool dashReady = true;
+    public override void _Ready()
+    {
+
+        DashTimer = GetNode<Timer>(DashTimerPath);
+        DashTimer2 = GetNode<Timer>(DashTimerPath2);
+        DashTimer.Connect("timeout", this, nameof(TimerGaming));
+        DashTimer2.Connect("timeout", this, nameof(TimerGaming2));
+        base._Ready();
+        Act = InputMovements;
+    }
+    public override void _Process(float delta)
+    {
+        pos = GlobalPosition;
+        PositionChange();
 
         AnimatedSprite player;
 
