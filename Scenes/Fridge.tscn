@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Sprites/sprite_fridge_and_frezzer.png" type="Texture" id=1]
+[ext_resource path="res://Script/Entities/RandomItem/Ah.cs" type="Script" id=2]
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 1 )
+region = Rect2( 33, 31, 33, 31 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 1 )
+region = Rect2( 16, 31, 16, 31 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 31, 16, 31 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 1 )
+region = Rect2( 33, 31, 33, 31 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": false,
+"name": "TurnOff",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 23.5, 17.625 )
+
+[node name="Fridge" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -0.5 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+playing = true
+
+[node name="Area2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1, -2 )
+scale = Vector2( 2, 2 )
+shape = SubResource( 1 )

@@ -133,6 +133,7 @@ namespace Com.IsartDigital.Manager
         public const string WIN = "WIN";
         public const string FACT = "FACT";
         public const string KNOW = "KNOW";
+        public const string CLICK = "click";
 
         //List of translation
         static public List<string> playList = new List<string>() {"Play","Jouer"};
@@ -145,6 +146,8 @@ namespace Com.IsartDigital.Manager
         public const string ANIM_FALLING = "Falling";
         public const string ANIM_IDLE = "Idle";
         public const string ANIM_WALKING = "Walking";
+        public const string ANIM_DEFAULT = "default";
+        public const string ANIM_TURN_OFF = "TurnOff";
 
         //Music Keys for the dictionary
         public const string AMBIANCE = "AMBIANCE";

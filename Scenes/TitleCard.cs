@@ -4,10 +4,11 @@ using System.Collections.Generic;
 
 //Author : Merfoud Kélyan
 
-namespace Com.IsartDigital.Manager {
+namespace Com.IsartDigital.Manager
+{
 
-	public class TitleCard : Node2D
-	{
+    public class TitleCard : Node2D
+    {
         static private TitleCard instance;
 
         [Export] private NodePath playPath;
@@ -74,5 +75,4 @@ namespace Com.IsartDigital.Manager {
             AddChild(lPar);
         }
     }
-
 }
